@@ -352,8 +352,8 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
         }
         cell.isAccessibilityElement = true
         cell.accessibilityLabel = cell.label.text
-        cell.accessibilityTraits |= UIAccessibilityTraitButton
-        cell.accessibilityTraits |= UIAccessibilityTraitHeader
+        cell.accessibilityTraits.insert(UIAccessibilityTraits.button)
+        cell.accessibilityTraits.insert(UIAccessibilityTraits.header)
         return cell
     }
 
